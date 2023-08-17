@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+:root {
+    --cera: 'Blinker', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(285deg, #070707 0%, #262626 100%);
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.swiper-pagination-bullet {
+    background: grey !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: linear-gradient(to bottom, #FF7D34, #C70012) !important;
+}
+
+input[type="password"] {
+    font-family: inherit !important;
+    /* Замените "Arial" на желаемый шрифт */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
