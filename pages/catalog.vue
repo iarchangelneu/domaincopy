@@ -84,7 +84,7 @@ export default {
             products: [
 
             ],
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             openFilter: false,
             openSort: false,
             minPrice: null,

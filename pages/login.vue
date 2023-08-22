@@ -32,7 +32,7 @@ export default {
         return {
             username: '',
             password: '',
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
         }
     },
     methods: {

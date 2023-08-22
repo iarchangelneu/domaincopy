@@ -60,7 +60,7 @@ export default {
             cardNumber: '',
             cardNumberMaxLength: 19,
             count: null,
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             accountType: '',
         }
     },

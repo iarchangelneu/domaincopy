@@ -87,7 +87,7 @@ export default {
             newId: this.chatId,
             messages: [],
             isTest: false,
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             msg: [],
             socket: null,
             isSeller: false,
@@ -199,7 +199,7 @@ export default {
             this.startChat()
         },
         startChat() {
-            this.socket = new WebSocket(`wss://d-market.kz/ws/messanger/open-chat/${this.newId}`);
+            this.socket = new WebSocket(`wss://domeinica.kz/ws/messanger/open-chat/${this.newId}`);
             this.socket.addEventListener('open', this.onSocketOpen);
             this.socket.addEventListener('message', this.onSocketMessage);
             this.socket.addEventListener('close', this.onSocketClose);

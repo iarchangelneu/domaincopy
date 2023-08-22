@@ -93,7 +93,7 @@ export default {
     data() {
         return {
             tab: 0,
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             myId: null,
             account: [],
             transactions: [],

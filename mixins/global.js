@@ -4,48 +4,47 @@ export default {
     return {
       isAuth: false,
       accountUrl: "",
-      pathUrl: 'https://d-market.kz',
+      pathUrl: "https://domeinica.kz",
       cart: [],
     };
   },
   methods: {
     addLineBreaks(text) {
       if (text) {
-          return text.replace(/\n/g, '<br/>');
+        return text.replace(/\n/g, "<br/>");
       }
     },
     deleteFromCart(id) {
-      const token = this.getAuthorizationCookie()
-      const csrf = this.getCSRFToken()
-      const path = `${this.pathUrl}/api/buyer/delete-product-basket/${id}`
-      axios.defaults.headers.common['X-CSRFToken'] = csrf;
-      axios.defaults.headers.common['Authorization'] = `Token ${token}`;
+      const token = this.getAuthorizationCookie();
+      const csrf = this.getCSRFToken();
+      const path = `${this.pathUrl}/api/buyer/delete-product-basket/${id}`;
+      axios.defaults.headers.common["X-CSRFToken"] = csrf;
+      axios.defaults.headers.common["Authorization"] = `Token ${token}`;
       axios
-          .put(path)
-          .then(response => {
-              console.log(response)
-              this.getCart()
-          })
-          .catch(error => {
-              console.error(error)
-          })
+        .put(path)
+        .then((response) => {
+          console.log(response);
+          this.getCart();
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     },
     getCart() {
-      const token = this.getAuthorizationCookie()
+      const token = this.getAuthorizationCookie();
       const path = `${this.pathUrl}/api/buyer/all-product-basket`;
-      axios.defaults.headers.common['Authorization'] = `Token ${token}`;
+      axios.defaults.headers.common["Authorization"] = `Token ${token}`;
 
       axios
-          .get(path)
-          .then(response => {
-              this.cart = response.data
-              localStorage.setItem('cartLength', this.cart.length)
-              
-          })
-          .catch(error => {
-              console.error(error)
-          })
-     },
+        .get(path)
+        .then((response) => {
+          this.cart = response.data;
+          localStorage.setItem("cartLength", this.cart.length);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    },
     logOut() {
       const token = this.getAuthorizationCookie();
       document.cookie =
@@ -107,21 +106,18 @@ export default {
       const acctype = localStorage.getItem("accountType");
       if (acctype == "buyer-account") {
         this.accountUrl = "/buyer-account";
-      } 
-      else if (acctype == "seller-account") {
+      } else if (acctype == "seller-account") {
         this.accountUrl = "/seller-account";
-      } 
-      else {
+      } else {
         this.accountUrl = "/register";
       }
     }, 100);
 
     const acctype = localStorage.getItem("accountType");
-      if (acctype == "buyer-account") {
-        this.getCart()
-      }
-      else{
-        return
-      }
+    if (acctype == "buyer-account") {
+      this.getCart();
+    } else {
+      return;
+    }
   },
 };

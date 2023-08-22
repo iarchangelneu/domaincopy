@@ -14,7 +14,7 @@ export default {
     mixins: [global],
     data() {
         return {
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
         }
     },
     methods: {
@@ -38,7 +38,7 @@ export default {
     },
     mounted() {
         const url = window.location.href;
-        const match = url.match(/order_pay_domain_(\d+)/);
+        const match = url.match(/order_pay_domeinica_(\d+)/);
 
         if (match) {
             this.extractedValue = match[0];

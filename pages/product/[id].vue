@@ -47,7 +47,7 @@ export default {
             productId: this.$route.params.id,
             product: [],
             seller: [],
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             category: '',
             apiMessage: '',
         }

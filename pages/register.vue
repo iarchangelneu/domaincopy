@@ -50,7 +50,7 @@ export default {
             username: '',
             password: '',
             activeSwitchPosition: '50%',
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
         }
     },
     methods: {

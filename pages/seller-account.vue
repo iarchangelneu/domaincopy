@@ -145,7 +145,7 @@ export default {
             sales: [],
             products: [],
             transactions: [],
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             account: [],
             sendId: null,
             chatId: null,

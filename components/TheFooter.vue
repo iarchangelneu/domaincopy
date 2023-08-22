@@ -1,7 +1,7 @@
 <template>
     <footer v-if="!hideFooterOnPages.includes($route.name)">
         <div class="links">
-            <img src="@/assets/img/footerlogo.svg" alt="">
+            <img src="@/assets/img/headerlogo.svg" alt="">
             <div>
                 <NuxtLink :to="accountUrl">личный кабинет</NuxtLink>
                 <NuxtLink to="/terms">пользовательское соглашение</NuxtLink>

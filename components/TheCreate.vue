@@ -14,7 +14,7 @@
                             required>
                             <option value="" disabled>Выбор категории</option>
                             <option v-for="(category, index) in categories" :value="index" :key="index">{{ category
-                            }}
+                                                            }}
                             </option>
                         </select>
                     </div>
@@ -84,7 +84,7 @@ export default {
             registrator: '',
             description: '',
             first_domain: '',
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
         }
     },
     methods: {

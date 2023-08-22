@@ -51,7 +51,7 @@
 
         <div class="mob">
             <NuxtLink to="/">
-                <img src="@/assets/img/footerlogo.svg" style="max-width: 118px;" alt="">
+                <img src="@/assets/img/headerlogo.svg" style="max-width: 118px;" alt="">
             </NuxtLink>
 
             <div class="rightblock">
@@ -85,7 +85,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <img src="@/assets/img/footerlogo.svg" class="img-fluid" alt="">
+                                    <img src="@/assets/img/headerlogo.svg" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ export default {
             hideHeaderOnPages: ['login', 'register'],
             testLogin: true,
             cartOpen: false,
-            pathUrl: 'https://d-market.kz',
+            pathUrl: 'https://domeinica.kz',
             userBalance: null,
             accountType: '',
             cartLength: localStorage.getItem('cartLength'),
