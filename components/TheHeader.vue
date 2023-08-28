@@ -75,7 +75,7 @@
                                 <NuxtLink to="/for-seller">Продавцу</NuxtLink>
                                 <div v-if="!isAuth">
                                     <NuxtLink to="/login">Войти</NuxtLink>
-                                    <NuxtLink to="/register">регистрация</NuxtLink>
+                                    <NuxtLink to="/register">Регистрация</NuxtLink>
                                 </div>
                                 <div v-else>
                                     <NuxtLink style="cursor: pointer;" alt="" data-toggle="modal"
