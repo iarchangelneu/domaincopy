@@ -11,13 +11,11 @@
 
         <div class="copyright">
             <div class="text-center">
-                <p>ТОО "ABNK.KZ",
-                    БИН - 230440033532
-                    Республика Казахстан, город Астана,<br>
-                    район Алматы, улица Қалибек Қуанышбаев,
-                    дом, 15/2, кв. 111
+                <p>Товарищество с ограниченной ответственностью "First Advertising Agency" (Ферст Адвертайзинг Эдженси)
+                    БИН 220140006136
+                    Казахстан, город Алматы, Алмалинский район, улица Чайковского, дом 22, почтовый индекс 050000
                 </p>
-                <p>Почта поддержки : <a href="mailto:support@designmarket.kz">support@designmarket.kz</a></p>
+                <p>Почта поддержки : <a href="mailto:support@domeinica.kz">support@domeinica.kz</a></p>
             </div>
         </div>
     </footer>
